@@ -6,6 +6,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-weight: 250px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
 }
 
 main {
