@@ -1,0 +1,27 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  justify-self: center;
+  display: flex;
+}
+
+.first {
+  font-family: "Courier New", Courier, monospace;
+  width: 100vh;
+  height: 100vh;
+  background-color: blue;
+  justify-content: center;
+}
+
+.first span {
+  font-family: "PRESS START 2P";
+  color: rgb(189, 5, 5);
+}
