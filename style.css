@@ -21,6 +21,7 @@ nav {
 .logo {
   font-size: 20px;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .nav-menu {
@@ -58,7 +59,13 @@ main {
 
 #name {
   color: rgb(189, 5, 5);
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 600;
   margin-top: 0;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+}
+
+#hero {
+  width: 400px;
 }
