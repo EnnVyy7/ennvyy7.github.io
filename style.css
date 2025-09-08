@@ -16,12 +16,8 @@ body {
 }
 
 .hero {
-  width: 400px;
+  width: 500px;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
 }
 
 nav {
@@ -83,7 +79,7 @@ main {
   flex-direction: column;
   display: flex;
   width: 80%;
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 .first {
@@ -101,6 +97,23 @@ main {
 
 .perkenalan h3 {
   margin-bottom: -5px;
+}
+
+.perkenalan button {
+  margin-top: 15px;
+  width: 35%;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgba(3, 104, 255, 0.721);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#caption {
+  font-size: 20px;
 }
 
 #name {
