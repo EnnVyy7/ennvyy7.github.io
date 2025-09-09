@@ -87,13 +87,6 @@ nav {
   -webkit-text-stroke: 0.2px black;
   font-weight: 350;
   transition: all 0.5s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon {
-  width: 25px;
 }
 
 .nav-items:hover {
@@ -182,22 +175,7 @@ main {
   }
 }
 
-@media screen and (max-width: 480px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 10%;
-    top: 30%;
-    position: absolute;
-    left: 10px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-  }
-
-  .nav-items span {
-    display: none;
-  }
-}
+/* body.dark{
+background-color: black !important;
+background: none;
+} */
