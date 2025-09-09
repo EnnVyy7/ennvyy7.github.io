@@ -15,9 +15,43 @@ body {
   color: gray;
 }
 
-.hero {
+#card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
   width: 500px;
+  height: 400px;
+}
+
+.cardflip {
+  transform: rotateY(180deg);
+}
+
+.hero {
   border-radius: 20px;
+  position: relative;
+  backface-visibility: hidden;
+  margin-top: -20%;
+  max-width: 100%;
+}
+
+#backcard {
+  background-color: rgba(3, 104, 255, 0.721);
+  padding: 20px;
+  color: white;
+  width: 80%;
+  height: 100%;
+  backface-visibility: hidden;
+  margin-top: -80%;
+  position: relative;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  justify-items: center;
+  justify-self: center;
+}
+
+#backcard ul {
+  list-style-type: none;
 }
 
 nav {
