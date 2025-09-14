@@ -87,6 +87,7 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  list-style-type: none;
 }
 
 .nav-items {
@@ -108,19 +109,20 @@ nav {
   /* transform: scale(1.15); */
   font-weight: 600;
 }
-.nav-items::after {
+.nav-menu li::after {
   content: "";
   display: block;
-  width: 100%;
-  padding-bottom: 0.5rem;
+  width: 70%;
+  padding-bottom: 4px;
   border-bottom: 1px solid black;
-  /* transform: scaleX(0); */
-  /* transition: 0.4s; */
+  margin: 0 auto;
+  transform: scaleX(0);
+  transition: 0.4s;
 }
 
-/* .nav-items:hover::after {
+.nav-menu li:hover::after {
   transform: scaleX(1);
-} */
+}
 
 .nav-menu a {
   text-decoration: none;
