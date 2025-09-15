@@ -100,9 +100,9 @@ nav {
   align-items: center;
 }
 
-.icon {
+/* .icon {
   width: 25px;
-}
+} */
 
 .nav-items:hover {
   color: var(--primary-color);
@@ -185,21 +185,22 @@ main {
   animation: nama 4s infinite alternate-reverse;
 }
 
-.second {
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 100px;
+  min-height: 100vh;
 }
 
-.second h1 {
+.title {
   font-weight: 700;
   color: white;
   padding-bottom: 10px;
   text-align: center;
 }
 
-.second h1::after {
+.title::after {
   content: "";
   display: block;
   border-bottom: 2px solid white;
@@ -207,7 +208,7 @@ main {
   margin: 5px auto 40px;
 }
 
-.second div {
+.about div {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -216,7 +217,7 @@ main {
   line-height: 1.3;
 }
 
-.second div span {
+.about div span {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -227,6 +228,58 @@ main {
   border-radius: 20px;
   border: 2px solid white;
 }
+
+.skills {
+  min-height: 100vh;
+  padding: 100px;
+}
+
+.category {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+.skill {
+  width: 20%;
+  display: inline-block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--primary-color);
+  border: 0px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.btn-active {
+  background-color: green;
+}
+.skills ul {
+  list-style-type: none;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px;
+  max-height: 200px;
+}
+
+.skills ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* * {
+    border: 1px solid red;
+  } */
 
 @keyframes nama {
   0% {

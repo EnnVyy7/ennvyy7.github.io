@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nicholas Valdinata | Portofolio</title>
+    <title>Nicholas Valdinata</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -20,20 +22,23 @@
 
       <ul class="nav-menu">
         <li>
-          <a class="nav-items" href="/index.html"
-            ><img src="icons8-home-48.png" alt="Home" class="icon" />
-            <span>Home</span>
+          <a class="nav-items" href="/index.html">
+            <!-- <img src="icons8-home-48.png" alt="About" class="icon" /> -->
+            <i data-feather="user"></i>
+            <span>About</span>
           </a>
         </li>
         <li>
-          <a class="nav-items" href="#"
-            ><img src="icons8-resume-50.png" alt="Skills" class="icon" />
+          <a class="nav-items" href="#" \>
+            <!-- <img src="icons8-resume-50.png" alt="Skills" class="icon" /> -->
+            <i data-feather="file-text"></i>
             <span>Skills</span>
           </a>
         </li>
         <li>
           <a class="nav-items" href="#">
-            <img src="icons8-telephone-50.png" alt="Contact" class="icon" />
+            <!-- <img src="icons8-telephone-50.png" alt="Contact" class="icon" /> -->
+            <i data-feather="phone"></i>
             <span>Contact</span>
           </a>
         </li>
@@ -76,8 +81,8 @@
           </div>
         </div>
       </div>
-      <div class="second">
-        <h1>About Me</h1>
+      <div class="about">
+        <h1 class="title">About Me</h1>
         <div>
           <img src="./profile.jpg" alt="Nicholas Valdinata" class="profile" />
           <span>
@@ -97,8 +102,79 @@
           </span>
         </div>
       </div>
+
+      <div class="skills">
+        <h1 class="title">My Skills</h1>
+        <div>
+          <div class="category">
+            <button
+              id="btn-programming"
+              class="skill"
+              onclick="listProgramming()"
+            >
+              <span>Programming</span>
+            </button>
+            <button id="btn-frontend" class="skill" onclick="listFrontend()">
+              <span>Frontend</span>
+            </button>
+            <button id="btn-backend" class="skill" onclick="listBackend()">
+              <span>Backend</span>
+            </button>
+            <button id="btn-os" class="skill" onclick="listOs()">
+              <span>OS</span>
+            </button>
+            <button id="btn-language" class="skill" onclick="listLanguage()">
+              <span>Language</span>
+            </button>
+          </div>
+
+          <ul id="list-programming">
+            <li><img src="https://skillicons.dev/icons?i=py" /> Python</li>
+            <li><img src="https://skillicons.dev/icons?i=php" /> PHP</li>
+            <li><img src="https://skillicons.dev/icons?i=js" /> Javascript</li>
+          </ul>
+
+          <ul id="list-frontend">
+            <li><img src="https://skillicons.dev/icons?i=html" /> HTML5</li>
+            <li><img src="https://skillicons.dev/icons?i=css" /> CSS3</li>
+            <li><img src="https://skillicons.dev/icons?i=react" /> React</li>
+            <li>
+              <img src="https://skillicons.dev/icons?i=bootstrap" /> Bootstrap
+            </li>
+            <li>
+              <img src="https://skillicons.dev/icons?i=tailwind" /> Tailwind CSS
+            </li>
+          </ul>
+
+          <ul id="list-Backend">
+            <li>
+              <img src="https://skillicons.dev/icons?i=laravel" /> Laravel
+            </li>
+            <li><img src="https://skillicons.dev/icons?i=mysql" /> MYSQL</li>
+          </ul>
+
+          <ul id="list-OS">
+            <li>
+              <img src="https://skillicons.dev/icons?i=windows" /> Windows
+            </li>
+            <li><img src="https://skillicons.dev/icons?i=debian" /> Debian</li>
+            <li><img src="https://skillicons.dev/icons?i=ubuntu" /> Ubuntu</li>
+            <li>
+              <img src="https://skillicons.dev/icons?i=kali" /> Kali Linux
+            </li>
+          </ul>
+          <ul id="list-language">
+            <li><img src="ina-flag.png" style="height: 50px" /> Indonesia</li>
+            <li><img src="eng-flag.png" style="height: 50px" /> English</li>
+          </ul>
+        </div>
+      </div>
     </main>
 
+    <script>
+      feather.replace();
+    </script>
+    <script src="skillst-table.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
