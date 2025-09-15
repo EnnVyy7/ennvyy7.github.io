@@ -8,6 +8,10 @@
   --primary-color: rgb(0, 7, 51);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
   display: flex;
@@ -78,9 +82,11 @@ nav {
 }
 
 .logo {
-  font-size: 20px;
+  /* font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px; */
+  height: 35px;
+  filter: invert(1);
 }
 
 .nav-menu {
@@ -185,7 +191,7 @@ main {
   animation: nama 4s infinite alternate-reverse;
 }
 
-.about {
+#about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,7 +214,7 @@ main {
   margin: 5px auto 40px;
 }
 
-.about div {
+#about div {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -217,7 +223,7 @@ main {
   line-height: 1.3;
 }
 
-.about div span {
+#about div span {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -229,7 +235,7 @@ main {
   border: 2px solid white;
 }
 
-.skills {
+#skills {
   min-height: 100vh;
   padding: 100px;
 }
@@ -260,7 +266,7 @@ main {
   background-color: white;
   color: var(--primary-color);
 }
-.skills ul {
+#skills ul {
   list-style-type: none;
   font-size: 30px;
   color: white;
@@ -275,7 +281,7 @@ main {
   padding-bottom: 25px;
 }
 
-.skills ul li {
+#skills ul li {
   display: flex;
   align-items: center;
 }
