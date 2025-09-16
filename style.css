@@ -235,7 +235,7 @@ main {
   border: 2px solid white;
 }
 
-#skills {
+.container {
   min-height: 100vh;
   padding: 100px;
 }
@@ -286,9 +286,58 @@ main {
   align-items: center;
 }
 
+.awardTab {
+  border: 1px solid grey;
+  min-height: 450px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.awardCard {
+  padding: 25px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  border: 1px solid rgb(0, 145, 255);
+}
+
+.competition {
+  display: flex;
+  justify-content: space-between;
+}
+
+.competition div mark {
+  display: inline-block;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 700;
+  width: 90px;
+  background-color: gold;
+  padding: 5px;
+}
+
+.competition time {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.compName {
+  font-weight: 900;
+  color: rgb(0, 145, 255);
+  font-size: 20px;
+}
+
+.medallion {
+  color: white;
+}
+
 /* * {
-    border: 1px solid red;
-  } */
+  border: 1px solid red;
+} */
 
 @keyframes nama {
   0% {
