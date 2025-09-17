@@ -466,6 +466,20 @@ footer {
   height: 100px;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  border-radius: 50px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* * {
   border: 1px solid red;
 } */
