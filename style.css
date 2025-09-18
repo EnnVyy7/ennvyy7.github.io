@@ -405,15 +405,12 @@ main {
   gap: 10px;
 }
 
-/* .location */
-
 footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  /* box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5); */
   min-height: 100px;
   box-shadow: 10px;
 }
@@ -493,15 +490,31 @@ footer {
   }
 }
 
+/* Untuk Hp */
+
 @media screen and (max-width: 480px) {
+  .right-line {
+    display: none;
+  }
+
+  .box-line {
+    display: none;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 10%;
-    top: 30%;
-    position: absolute;
+    top: 40%;
+    position: fixed;
     left: 10px;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .logo {
+    display: none;
   }
 
   .nav-menu {
@@ -511,4 +524,35 @@ footer {
   .nav-items span {
     display: none;
   }
+
+  .first {
+    min-height: 130vh;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .perkenalan {
+    text-align: center;
+  }
+
+  #name {
+    font-size: 35px;
+  }
+
+  #caption {
+    font-size: 15px;
+  }
+
+  .container {
+    width: 100vh;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  /* body {
+    width: 100vh;
+  } */
 }
