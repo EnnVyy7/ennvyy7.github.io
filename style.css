@@ -552,6 +552,7 @@ footer {
   .container {
     width: 100vh;
     padding: 0;
+    min-height: 100vh;
     margin: 0 auto;
     margin-left: -50px;
   }
@@ -580,7 +581,48 @@ footer {
     gap: 30px;
   }
 
-  /* body {
-    width: 100vh;
-  } */
+  #skills {
+    padding: 100px 0;
+  }
+
+  #achievement {
+    padding: 100px 0;
+  }
+
+  #contact {
+    padding: 50px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-box ul li {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contact-box ul li svg {
+    align-self: center;
+  }
+
+  .competition div time {
+    display: none;
+  }
+
+  .back-to-top {
+    width: 80px;
+    height: 80px;
+  }
 }
