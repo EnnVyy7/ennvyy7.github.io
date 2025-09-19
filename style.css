@@ -493,20 +493,60 @@ footer {
 /* Untuk Hp */
 
 @media screen and (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+  }
+
   .right-line {
-    display: none;
+    top: 40px;
+    right: 0;
+    position: absolute;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .vertical-line {
+    width: 100px;
+    height: 1px;
+  }
+
+  .right-line p {
+    font-size: 15px;
+    transform: rotate(360deg);
+    transform-origin: right;
   }
 
   .box-line {
-    display: none;
+    position: absolute;
+    top: 90px;
+    height: 20px;
+    left: 0;
+    margin: 0;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+
+  .box-line ul {
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .box-line ul li svg {
+    height: 18px;
+    width: 18px;
   }
 
   nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 10%;
-    top: 40%;
+    width: 6%;
+    top: 30%;
     position: fixed;
     left: 10px;
     margin: 0;
@@ -525,15 +565,31 @@ footer {
     display: none;
   }
 
+  main {
+    width: 100vw;
+  }
+
+  #card {
+    width: 200px;
+    height: 200px;
+  }
+
+  #backcard {
+    font-size: 7px;
+    font-weight: 500;
+    height: 100%;
+    margin-top: -100%;
+  }
+
   .first {
-    min-height: 130vh;
-    min-width: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     flex-direction: column-reverse;
     margin: 0 auto;
     gap: 0;
     justify-content: center;
     gap: 40px;
-    margin-left: -50px;
+    /* margin-left: -12.8%; */
     margin-top: 50px;
   }
 
@@ -622,7 +678,7 @@ footer {
   }
 
   .back-to-top {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 }
