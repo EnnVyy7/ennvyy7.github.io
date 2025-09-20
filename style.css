@@ -265,6 +265,7 @@ main {
   background-color: white;
   color: var(--primary-color);
 }
+
 #skills ul {
   list-style-type: none;
   font-size: 30px;
@@ -283,6 +284,11 @@ main {
 #skills ul li {
   display: flex;
   align-items: center;
+}
+
+#list-language li img {
+  height: 50px;
+  width: 85px;
 }
 
 .awardTab {
@@ -332,6 +338,10 @@ main {
 
 .medallion {
   color: white;
+}
+
+.medallion h2 {
+  font-size: 30px;
 }
 
 .contact-info {
@@ -606,11 +616,10 @@ footer {
   }
 
   .container {
-    width: 100vh;
+    width: 100vw;
     padding: 0;
     min-height: 100vh;
     margin: 0 auto;
-    margin-left: -50px;
   }
 
   #about {
@@ -618,7 +627,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 0;
-    min-height: 150vh;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
   }
 
   main {
@@ -626,8 +637,8 @@ footer {
   }
 
   #about div {
-    margin: 0 100px;
-    flex-direction: column;
+    margin: 0 50px;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -635,18 +646,89 @@ footer {
 
   #about div span {
     gap: 30px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .profile {
+    border: 0px;
+    border-radius: 10px;
+    width: 80vw;
   }
 
   #skills {
     padding: 100px 0;
   }
 
+  #skills ul li {
+    font-size: 10px;
+  }
+
+  #skills ul li img {
+    height: 40px;
+  }
+
+  #list-language li img {
+    width: 60px;
+  }
+
+  .category {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skill {
+    font-size: 10px;
+  }
+
   #achievement {
-    padding: 100px 0;
+    padding: 100px 15px;
+  }
+
+  .awardTab {
+    padding: 15px;
+    min-height: 200px;
+  }
+
+  .awardCard {
+    padding: 10px;
+    min-height: 115px;
+  }
+
+  .compName {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .competition div mark {
+    padding: 2px;
+    width: 40px;
+    font-size: 10px;
+  }
+
+  .medallion h2 {
+    font-size: 18px;
+  }
+
+  .medallion p {
+    font-size: 10px;
   }
 
   #contact {
-    padding: 50px;
+    padding: 30px;
+  }
+
+  .contact-info h3 {
+    font-size: 15px;
+  }
+
+  .title {
+    padding: 0;
+  }
+
+  .mail ul li svg {
+    height: 25px;
   }
 
   .info {
@@ -675,6 +757,11 @@ footer {
 
   .competition div time {
     display: none;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 0 auto;
   }
 
   .back-to-top {
