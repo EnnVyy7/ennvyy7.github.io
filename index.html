@@ -136,7 +136,7 @@
         <h1 class="title">My Skills</h1>
         <div>
           <div class="category">
-            <button
+            <!-- <button
               id="btn-programming"
               class="skill"
               onclick="listProgramming()"
@@ -154,7 +154,32 @@
             </button>
             <button id="btn-language" class="skill" onclick="listLanguage()">
               <span>Language</span>
-            </button>
+            </button> -->
+
+            <div class="skill">
+              <input type="checkbox" class="checkbox" id="btn-programming" onclick="listProgramming()">
+              <span>Programming</span>
+            </div>
+
+            <div class="skill">
+              <input type="checkbox" class="checkbox" id="btn-frontend" onclick="listFrontend()">
+              <span>Frontend</span>
+            </div>
+
+            <div class="skill">
+              <input type="checkbox" class="checkbox" id="btn-backend" onclick="listBackend()">
+              <span>Backend</span>
+            </div>
+
+            <div class="skill">
+              <input type="checkbox" class="checkbox" id="btn-os" onclick="listOs()">
+              <span>OS</span>
+            </div>
+
+            <div class="skill">
+              <input type="checkbox" class="checkbox" id="btn-language" onclick="listLanguage()">
+              <span>Language</span>
+            </div>
           </div>
 
           <ul id="list-programming">
