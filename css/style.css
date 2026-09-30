@@ -246,11 +246,12 @@ main {
   border: 1px solid grey;
   padding: 5px;
   position: relative;
+  border-radius: 7.5px;
 }
 
 .checkbox {
   position: absolute;
-  width: 20%;
+  width: 100%;
   opacity: 0;
   z-index: 100;
   height: 100%;
@@ -270,13 +271,13 @@ main {
   margin: 0 5px;
 }
 
-.skill span {
+.skill label {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
   border-radius: 7.5px;
 }
 
@@ -285,26 +286,53 @@ main {
   color: var(--primary-color);
 } */
 
-.checkbox:checked ~ span {
+.checkbox:checked ~ label {
   background-color: black;
   background-color: white;
   color: var(--primary-color);
 }
 
+body:has(#btn-programming:checked) #list-programming {
+  opacity: 1;
+}
+
+body:has(#btn-frontend:checked) #list-frontend {
+  opacity: 1;
+}
+
+body:has(#btn-backend:checked) #list-backend {
+  opacity: 1;
+}
+
+body:has(#btn-os:checked) #list-OS {
+  opacity: 1;
+}
+
+body:has(#btn-language:checked) #list-language {
+  opacity: 1;
+}
+
+#skills div {
+  position: relative;
+}
 
 #skills ul {
+  position: absolute;
   list-style-type: none;
+  opacity: 0;
   font-size: 30px;
   color: white;
   font-weight: 700;
-  display: none;
+  width: 90%;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 40px;
+  margin: 40px 5%;
   max-height: 200px;
   border-bottom: 1px solid grey;
   padding-bottom: 25px;
+  transition: all .3s ease-in-out;
 }
 
 #skills ul li {
